@@ -1,0 +1,60 @@
+:root {
+  --color-dark: #191a23;
+  --color-light: #ffffff;
+  --color-gray: #edf8f2;
+  --color-gray-light: #efefef;
+  --color-gray-medium: #e6e6e6;
+  --color-gray-dark: #bfbfbf;
+  --color-gray-table-border: #c7c7c7;
+  --color-gray-icon: #d2d2d2;
+  --color-yellow: #ffe598;
+  --color-red: #ff0000;
+  --color-pink: #f3cccc;
+  --color-green: #00e9a8;
+  --color-green-light: #a3e9c3;
+  --color-green-dark: #34a753;
+  --color-blue: #0094ff;
+  --color-violet: #400478;
+  --color-grad-1: linear-gradient(90deg, #00d1da 0%, #00feb2 100%);
+  --color-grad-2: linear-gradient(270deg, #00feb2 0%, #00d1da 100%);
+  --color-grad-3: linear-gradient(
+    201deg,
+    rgba(169, 235, 199, 0) 0%,
+    #a9ebc7 100%
+  );
+  --color-grad-4: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.525) 100%
+  );
+  --color-grad-5: linear-gradient(226deg, #fff 0%, #a3e9c3 100%);
+
+  --border-radius-small: 5px;
+  --border-radius-table: 10px;
+  --border-radius: 30px;
+  --border-radius-medium: 38px;
+  --border-radius-large: 93px;
+
+  --box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  --box-shadow-2: 0 -2px 10px rgba(0, 0, 0, 0.05);
+
+  --font-family-base: "Futura", sans-serif;
+  --font-family-base-accent-light: "Futura book light", sans-serif;
+  --font-family-second: "Inter", sans-serif;
+  --font-family-alternate: "Roboto", sans-serif;
+
+  --container-width: 1880px;
+  --menuHeight: 80px;
+  --container-padding-x: 20px;
+  --whoUsesMagrinTopMobile: 250px;
+
+  --indentSmall: clamp(12.5px, 1.25vw, 25px);
+  --indent: clamp(25px, 2.5vw, 50px);
+  --indentBig: clamp(40px, 3.9vw, 75px);
+
+  --transition-duration: 0.3s;
+
+  @include mobile-media {
+    --menuHeight: clamp(50px, 10.43vw, 80px);
+  }
+}

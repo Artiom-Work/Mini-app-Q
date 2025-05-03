@@ -1,0 +1,29 @@
+.header {
+  --headerIndentation: clamp(20px, 2.56vw, 50px);
+  @include flex-space-between;
+
+  position: relative;
+  padding-inline: clamp(20px, 2.56vw, 60px) var(--headerIndentation);
+
+  padding-block: var(--headerIndentation) 0;
+
+  &__text {
+    @include fluid-text(54, 22);
+
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+
+    &--accent {
+      font-weight: 700;
+    }
+  }
+  &__decor-image {
+    position: absolute;
+    right: 50px;
+    top: -0.97vw;
+
+    @include desktop-media {
+      right: 2.87vw;
+    }
+  }
+}
