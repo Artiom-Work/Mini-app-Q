@@ -96,114 +96,114 @@
   }
 }
 // Styles for decor
-.block-text {
-  position: relative;
+// .block-text {
+//   position: relative;
 
-  &__text {
-    p {
-      position: relative;
-    }
+//   &__text {
+//     p {
+//       position: relative;
+//     }
 
-    & p:nth-child(4n) {
-      position: relative;
-      &::after {
-        @include decor-circle-small;
-        @include decor-position-top-left;
+//     & p:nth-child(4n) {
+//       position: relative;
+//       &::after {
+//         @include decor-circle-small;
+//         @include decor-position-top-left;
 
-        translate: 170px -50%;
-      }
-    }
-    & p:nth-child(5n) {
-      position: relative;
-      &::before {
-        @include decor-circle-big;
-        @include decor-position-center;
-      }
-    }
-  }
+//         translate: 170px -50%;
+//       }
+//     }
+//     & p:nth-child(5n) {
+//       position: relative;
+//       &::before {
+//         @include decor-circle-big;
+//         @include decor-position-center;
+//       }
+//     }
+//   }
 
-  &__table {
-    thead {
-      position: relative;
-      &::before {
-        @include decor-circle-big(true);
-        @include decor-position-top-right;
-      }
-      &::after {
-        @include decor-circle-big;
-        @include decor-position-top-left;
-      }
-    }
-    tbody {
-      position: relative;
-      &::before {
-        @include decor-circle-small;
-        @include decor-position-bottom-left;
-      }
-      &::after {
-        @include decor-circle-big(true);
-        @include decor-position-center;
-      }
-    }
-  }
+//   &__table {
+//     thead {
+//       position: relative;
+//       &::before {
+//         @include decor-circle-big(true);
+//         @include decor-position-top-right;
+//       }
+//       &::after {
+//         @include decor-circle-big;
+//         @include decor-position-top-left;
+//       }
+//     }
+//     tbody {
+//       position: relative;
+//       &::before {
+//         @include decor-circle-small;
+//         @include decor-position-bottom-left;
+//       }
+//       &::after {
+//         @include decor-circle-big(true);
+//         @include decor-position-center;
+//       }
+//     }
+//   }
 
-  &__table-box {
-    position: relative;
-    z-index: -1;
+//   &__table-box {
+//     position: relative;
+//     z-index: -1;
 
-    &::before {
-      @include decor-circle-color-big(true);
-      @include decor-position-top-left;
-    }
-    &::after {
-      @include decor-circle-big;
-      @include decor-position-bottom-right;
-    }
-  }
-  ul,
-  ol {
-    li {
-      position: relative;
-    }
-    li:nth-child(4n) {
-      &::before {
-        @include decor-circle-small(true);
-        @include decor-position-bottom-left;
-      }
-    }
-    li:nth-child(5n) {
-      &::before {
-        @include decor-circle-small;
-        @include decor-position-top-left;
+//     &::before {
+//       @include decor-circle-color-big(true);
+//       @include decor-position-top-left;
+//     }
+//     &::after {
+//       @include decor-circle-big;
+//       @include decor-position-bottom-right;
+//     }
+//   }
+//   ul,
+//   ol {
+//     li {
+//       position: relative;
+//     }
+//     li:nth-child(4n) {
+//       &::before {
+//         @include decor-circle-small(true);
+//         @include decor-position-bottom-left;
+//       }
+//     }
+//     li:nth-child(5n) {
+//       &::before {
+//         @include decor-circle-small;
+//         @include decor-position-top-left;
 
-        translate: 140px -50%;
-      }
-    }
-  }
-  ul:not(:last-child) {
-    li:nth-child(8n + 1) {
-      &::after {
-        @include decor-circle-small;
-        @include decor-position-center;
+//         translate: 140px -50%;
+//       }
+//     }
+//   }
+//   ul:not(:last-child) {
+//     li:nth-child(8n + 1) {
+//       &::after {
+//         @include decor-circle-small;
+//         @include decor-position-center;
 
-        translate: -100% 0;
-      }
-    }
-    li:nth-child(8n + 4) {
-      &::after {
-        @include decor-circle-big;
-        @include decor-position-center;
+//         translate: -100% 0;
+//       }
+//     }
+//     li:nth-child(8n + 4) {
+//       &::after {
+//         @include decor-circle-big;
+//         @include decor-position-center;
 
-        translate: 100% 0;
-      }
-    }
-    li:nth-child(4n + 3) {
-      &::after {
-        @include decor-circle-small(true);
-        @include decor-position-bottom-right;
+//         translate: 100% 0;
+//       }
+//     }
+//     li:nth-child(4n + 3) {
+//       &::after {
+//         @include decor-circle-small(true);
+//         @include decor-position-bottom-right;
 
-        translate: -50% 50;
-      }
-    }
-  }
-}
+//         translate: -50% 50;
+//       }
+//     }
+//   }
+// }

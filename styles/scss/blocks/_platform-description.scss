@@ -144,49 +144,49 @@
 }
 
 // Styles for decor
-.platform-description {
-  &__title {
-    &:first-child {
-      &::after {
-        @include decor-circle-color-big;
-        @include decor-position-top-right;
-        translate: 25% -50%;
-      }
-    }
-    &--medium {
-      &::after {
-        @include decor-circle-color-big;
-        @include decor-position-center;
-      }
-    }
-  }
+// .platform-description {
+//   &__title {
+//     &:first-child {
+//       &::after {
+//         @include decor-circle-color-big;
+//         @include decor-position-top-right;
+//         translate: 25% -50%;
+//       }
+//     }
+//     &--medium {
+//       &::after {
+//         @include decor-circle-color-big;
+//         @include decor-position-center;
+//       }
+//     }
+//   }
 
-  &__main-desc {
-    &::before {
-      @include decor-circle-color-big(true);
-      @include decor-position-top-left;
-    }
-    &::after {
-      @include decor-circle-color-small;
-      @include decor-position-bottom-right;
-    }
-  }
-  &__heading {
-    &--center {
-      position: relative;
-      z-index: 1;
-      &::before {
-        @include decor-circle-color-big(true);
-        @include decor-position-bottom-left;
+//   &__main-desc {
+//     &::before {
+//       @include decor-circle-color-big(true);
+//       @include decor-position-top-left;
+//     }
+//     &::after {
+//       @include decor-circle-color-small;
+//       @include decor-position-bottom-right;
+//     }
+//   }
+//   &__heading {
+//     &--center {
+//       position: relative;
+//       z-index: 1;
+//       &::before {
+//         @include decor-circle-color-big(true);
+//         @include decor-position-bottom-left;
 
-        z-index: 0;
-      }
-      &::after {
-        @include decor-circle-small;
-        @include decor-position-center;
+//         z-index: 0;
+//       }
+//       &::after {
+//         @include decor-circle-small;
+//         @include decor-position-center;
 
-        translate: 200% -20px;
-      }
-    }
-  }
-}
+//         translate: 200% -20px;
+//       }
+//     }
+//   }
+// }
