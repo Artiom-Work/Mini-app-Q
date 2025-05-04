@@ -6,12 +6,15 @@
     margin-block: 0 var(--indent);
     position: relative;
     z-index: 1;
+
     &::after {
       top: -50px;
     }
+
     &--big {
       justify-content: center;
     }
+
     &--width {
       width: 100%;
     }
@@ -28,6 +31,9 @@
     margin-block: 0 var(--indentSmall);
     font-weight: 700;
 
+    @include mobile-media {
+      column-gap: 14px;
+    }
     &::before {
       @include square(clamp(44px, 2.8vw, 54px));
 
@@ -39,7 +45,8 @@
       left: 0;
 
       @include mobile-media {
-        background: var(--color-green-bright);
+        width: 44px;
+        background: var(--color-turquoise);
       }
     }
   }
@@ -56,6 +63,10 @@
     height: clamp(12.5px, 1.25vw, 25px);
     margin-block: 0 var(--indent);
     border-radius: var(--border-radius-small);
+
+    @include mobile-media {
+      height: 12.5px;
+    }
   }
 
   &__table-box {
@@ -75,18 +86,29 @@
     @include fluid-text(24, 9);
     margin-block: var(--indent);
 
+    @include mobile-media {
+      font-size: 9px;
+    }
     thead {
       font-weight: 500;
     }
 
     th {
       padding: 0 clamp(2px, 0.67vw, 10px) clamp(2px, 0.67vw, 10px);
+
+      @include mobile-media {
+        padding: 0 2px 2px;
+      }
     }
 
     td {
       vertical-align: text-top;
       text-align: center;
       padding: 0 clamp(2px, 0.67vw, 10px) clamp(2px, 0.67vw, 10px);
+
+      @include mobile-media {
+        padding: 0 2px 2px;
+      }
     }
     @include mobile-s-media {
       margin-inline: calc(var(--container-padding-x) * -1);

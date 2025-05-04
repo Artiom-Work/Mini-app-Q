@@ -10,6 +10,10 @@
     &-title {
       @include fluid-text(27, 20);
       font-weight: 700;
+
+      @include mobile-media {
+        font-size: 20px;
+      }
     }
   }
 
@@ -19,6 +23,7 @@
 
     @include mobile-media {
       background: var(--color-green-bright);
+      height: 25px;
     }
   }
 }
