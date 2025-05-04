@@ -217,6 +217,9 @@ svg * {
   --color-green-dark: #34a753;
   --color-blue: #0094ff;
   --color-violet: #400478;
+  --color-green-bright: #00feb2;
+  --color-green-bright-blend: #a9ebc7;
+  --color-turquoise: #00d1da;
   --color-grad-1: linear-gradient(90deg, #00d1da 0%, #00feb2 100%);
   --color-grad-2: linear-gradient(270deg, #00feb2 0%, #00d1da 100%);
   --color-grad-3: linear-gradient(
@@ -439,6 +442,11 @@ h4,
   background: var(--color-grad-1);
   height: clamp(25px, 2.81vw, 54px);
 }
+@media (max-width: 767px) {
+  .section__decor-background {
+    background: var(--color-green-bright);
+  }
+}
 
 .table {
   font-size: clamp(20px, 1.6145833333vw, 31px);
@@ -525,6 +533,11 @@ h4,
   border-radius: var(--border-radius);
   background: var(--color-grad-1);
   padding-block: var(--indentBig);
+}
+@media (max-width: 767px) {
+  .platform-description__heading {
+    background: var(--color-turquoise);
+  }
 }
 .platform-description__heading--center {
   padding-block: var(--indent);
@@ -702,6 +715,11 @@ h4,
   border-radius: 50%;
   left: 0;
 }
+@media (max-width: 767px) {
+  .block-text__subtitle::before {
+    background: var(--color-green-bright);
+  }
+}
 .block-text__text {
   padding-inline: var(--indentSmall);
 }
@@ -720,6 +738,11 @@ h4,
   padding-block: var(--indent);
   margin-block: var(--indent);
   border-radius: var(--border-radius);
+}
+@media (max-width: 767px) {
+  .block-text__table-box {
+    background: var(--color-green-bright);
+  }
 }
 .block-text__table {
   font-size: clamp(9px, 1.25vw, 24px);

@@ -37,6 +37,10 @@
       background: var(--color-grad-2);
       border-radius: 50%;
       left: 0;
+
+      @include mobile-media {
+        background: var(--color-green-bright);
+      }
     }
   }
 
@@ -61,6 +65,10 @@
     padding-block: var(--indent);
     margin-block: var(--indent);
     border-radius: var(--border-radius);
+
+    @include mobile-media {
+      background: var(--color-green-bright);
+    }
   }
 
   &__table {

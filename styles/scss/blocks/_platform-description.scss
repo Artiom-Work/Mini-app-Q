@@ -28,6 +28,10 @@
     background: var(--color-grad-1);
     padding-block: var(--indentBig);
 
+    @include mobile-media {
+      background: var(--color-turquoise);
+    }
+
     &--center {
       padding-block: var(--indent);
       padding-inline: var(--container-padding-x);
