@@ -49,11 +49,6 @@
     margin-block: 0 clamp(15px, 2.3vw, 50px);
     font-weight: 700;
     text-align: center;
-
-    @include mobile-media {
-      font-size: 20px;
-      margin-block: 0 15px;
-    }
   }
 
   &__head {

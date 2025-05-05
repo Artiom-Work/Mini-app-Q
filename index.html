@@ -13,12 +13,13 @@
 		content="Зарабатывайте на крипторынке без сложностей! Q — это биржа, кошелёк и майнинг в одном Telegram-боте. Начните с $7 и получите 0.77% от каждой сделки рефералов.">
 	<title>Mini-app Q</title>
 	<link rel="stylesheet" href="./styles/css/style.css">
+	<script src="./js/lazy-load.js" defer></script>
 </head>
 
 <body>
 
 
-	<!-- <header class="header container">
+	<header class="header container">
 		<a class="header__logo logo" href="index.html" aria-label="Логотип Q" title="Q app">
 			<img class="logo__image" src="./images/icons/logo-icon.svg" width="100" height="100"
 				alt="Иконка логотипа компании">
@@ -39,12 +40,12 @@
 		<svg class="header__decor-image decor-image" width="88" height="111" viewBox="0 0 88 111">
 			<use xlink:href="./images/icons/sprite-icons.svg#decor-circles"></use>
 		</svg>
-	</header> -->
+	</header>
 
 	<main class="content">
 		<h1 class="visually-hidden">Mini-app Q</h1>
 
-		<!-- <section class="about container section">
+		<section class="about container section">
 			<h2 class="visually-hidden">О платформе Mini-app Q</h2>
 
 			<div class="about__heading section__heading">
@@ -1634,11 +1635,11 @@
 						height="450" loading="lazy">
 				</li>
 			</ul>
-		</section> -->
+		</section>
 
 		<section class="platform-description">
 			<h2 class="visually-hidden">Описание платформы Q</h2>
-			<div class="platform-description__heading">
+			<div class="platform-description__heading lazy-load">
 
 				<h3 class="platform-description__title h2">
 					Платформа Q
@@ -1666,7 +1667,7 @@
 
 			</div>
 
-			<section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="block-text__title h3">
 					1. Глобальная клиентская база и&nbsp;целевая аудитория
 				</h3>
@@ -1996,7 +1997,7 @@
 			</section>
 			<div class="section__decor-background"></div>
 
-			<!-- <section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="visually-hidden">Преимущества платформы Q</h3>
 				<div class="platform-description__heading platform-description__heading--center">
 					<h3 class="block-text__title block-text__title--big h3">
@@ -2221,9 +2222,9 @@
 				</div>
 
 			</section>
-			<div class="section__decor-background"></div> -->
+			<div class="section__decor-background"></div>
 
-			<!-- <section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="visually-hidden">Безопасность платформы Q</h3>
 				<div class="platform-description__heading platform-description__heading--center">
 					<h4 class="block-text__title block-text__title--big h3">
@@ -2370,9 +2371,9 @@
 					</div>
 				</div>
 			</section>
-			<div class="section__decor-background"></div> -->
+			<div class="section__decor-background"></div>
 
-			<!-- <section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="visually-hidden">AML/KYC-процедуры, комплаенс и прозрачность платформы Q</h3>
 				<div class="platform-description__heading platform-description__heading--center">
 					<h4 class="block-text__title block-text__title--big h3">
@@ -2657,9 +2658,9 @@
 					</li>
 				</ol>
 			</section>
-			<div class="section__decor-background"></div> -->
+			<div class="section__decor-background"></div>
 
-			<!-- <section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="visually-hidden">Сравнение проекта Q сBinance, Bybit</h3>
 
 				<div class="block-text__table-box">
@@ -2754,9 +2755,9 @@
 				</div>
 
 			</section>
-			<div class="section__decor-background"></div> -->
+			<div class="section__decor-background"></div>
 
-			<!-- <section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="block-text__title block-text__title--width h3">
 					1. Схема хранения средств клиентов: безопасность&nbsp;Q vs. безопасность Binance, Bybit и&nbsp;др.
 					<svg
@@ -2878,9 +2879,9 @@
 				</div>
 
 			</section>
-			<div class="section__decor-background"></div> -->
+			<div class="section__decor-background"></div>
 
-			<!-- <section class="platform-description__block-text block-text container">
+			<section class="platform-description__block-text block-text container lazy-load">
 				<h3 class="block-text__title block-text__title--width h3">
 					2. KYC и&nbsp;международный кооператив: регуляторная модель&nbsp;Q vs. классические биржи
 					<svg class="platform-description__decor-image platform-description__decor-image--right  decor-image"
@@ -3099,12 +3100,12 @@
 				</ul>
 
 			</section>
-			<div class="section__decor-background"></div> -->
+			<div class="section__decor-background"></div>
 
 		</section>
 	</main>
 
-	<!-- <nav class="menu">
+	<nav class="menu">
 		<ul class="menu__list">
 			<li class="menu__item">
 				<button class="menu__button" id="translate-to-english" type="button" aria-label="английский"
@@ -3153,7 +3154,7 @@
 			</li>
 		</ul>
 		<div id="google-translate-element"></div>
-	</nav> -->
+	</nav>
 
 
 	<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
@@ -3169,7 +3170,7 @@
 		}
 	</script> -->
 
-	<!-- <script type="module" src="./js/main.js"></script> -->
+	<script type="module" src="./js/main.js"></script>
 
 	<!-- <script type="text/javascript"
 		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->

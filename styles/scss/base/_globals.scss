@@ -11,6 +11,9 @@ body {
   background-color: var(--color-light);
   padding-block: 0 var(--menuHeight);
 }
+.lazy-load {
+  display: none;
+}
 // .skiptranslate {
 //   display: none;
 // }
@@ -58,34 +61,18 @@ h4 {
 h1,
 .h1 {
   @include fluid-text(62, 43);
-
-  @include mobile-media {
-    font-size: 43px;
-  }
 }
 h2,
 .h2 {
   @include fluid-text(60, 40);
-
-  @include mobile-media {
-    font-size: 40px;
-  }
 }
 h3,
 .h3 {
   @include fluid-text(50, 30);
-
-  @include mobile-media {
-    font-size: 30px;
-  }
 }
 h4,
 .h4 {
   @include fluid-text(40, 20);
-
-  @include mobile-media {
-    font-size: 20px;
-  }
 }
 
 .accent-text {
@@ -105,9 +92,6 @@ h4,
   line-height: 1.53;
   white-space: nowrap;
 
-  @include mobile-media {
-    font-size: 22px;
-  }
   &__accent-text {
     letter-spacing: -0.04em;
   }
@@ -116,11 +100,6 @@ h4,
 .decor-image {
   width: clamp(44px, 4.58vw, 88px);
   height: clamp(55px, 5.7vw, 111px);
-
-  @include mobile-media {
-    width: 44px;
-    height: 55px;
-  }
 }
 
 .round-icon {
@@ -130,10 +109,5 @@ h4,
 
     background: var(--color-grad-2);
     border-radius: 50%;
-
-    @include mobile-media {
-      width: 44px;
-      background: var(--color-turquoise);
-    }
   }
 }
