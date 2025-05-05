@@ -307,6 +307,10 @@ body {
   padding-block: 0 var(--menuHeight);
 }
 
+.lazy-load {
+  display: none;
+}
+
 .content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
