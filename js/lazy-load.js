@@ -12,10 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
 					nextElement.getAttribute('style')?.includes('display: none')) {
 
 					nextElement.removeAttribute('style');
-					marker.classList.add('marker-viewed');
-					observer.unobserve(marker);
+					nextElement.style.opacity = '0';
+					nextElement.style.transform = 'translateY(-70vh)';
+					nextElement.style.transition = 'opacity 1s ease, transform 1s ease';
 
-					const nextMarker = document.querySelector('.load-marker:not(.marker-viewed)');
+					setTimeout(() => {
+						nextElement.style.opacity = '1';
+						nextElement.style.transform = 'translateY(0)';
+					}, 100);
+
+					observer.unobserve(marker);
+					marker.remove();
+
+					const nextMarker = document.querySelector('.load-marker');
 					if (nextMarker) {
 						observer.observe(nextMarker);
 					}
@@ -27,9 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		threshold: 0.1
 	});
 
-	const firstMarker = document.querySelector('.load-marker:not(.marker-viewed)');
+	const firstMarker = document.querySelector('.load-marker');
 	if (firstMarker) {
 		observer.observe(firstMarker);
 	}
 });
-
