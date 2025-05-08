@@ -158,6 +158,9 @@ const languages = {
 
 window.addEventListener('load', () => {
 	const lang = localStorage.getItem('language') || 'en';
+	if (!localStorage.getItem('language')) {
+		document.getElementById('translate-to-english').click();
+	}
 });
 
 function setLanguage(lang) {

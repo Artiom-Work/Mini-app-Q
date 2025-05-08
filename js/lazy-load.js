@@ -1,6 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
@@ -13,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 					nextElement.removeAttribute('style');
 					nextElement.style.opacity = '0';
-					nextElement.style.transform = 'translateY(-70vh)';
-					nextElement.style.transition = 'opacity 1s ease, transform 1s ease';
+					nextElement.style.transform = 'translateY(-15vh)';
+					nextElement.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
 
 					setTimeout(() => {
 						nextElement.style.opacity = '1';
