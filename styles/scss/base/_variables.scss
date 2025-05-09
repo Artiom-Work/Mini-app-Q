@@ -1,7 +1,7 @@
 :root {
   --color-dark: #191a23;
-  --color-dark-opacity: rgba(0, 0, 0, 0.4);
-  --color-light-opacity: rgba(255, 255, 255, 0.4);
+  // --color-dark-opacity: rgba(0, 0, 0, 0.5);
+  // --color-light-opacity: rgba(255, 255, 255, 0.8);
   --color-light: #ffffff;
   --color-gray: #edf8f2;
   --color-gray-light: #efefef;
@@ -14,6 +14,7 @@
   --color-pink: #f3cccc;
   --color-green: #00e9a8;
   --color-green-light: #a3e9c3;
+  --color-green-extra-light: #ddffec;
   --color-green-dark: #34a753;
   --color-blue: #0094ff;
   --color-violet: #400478;
@@ -47,7 +48,7 @@
   --font-family-alternate: "Roboto", sans-serif;
 
   --container-width: 1880px;
-  --menuHeight: 80px;
+  --menuHeight: 100px;
   --container-padding-x: 20px;
   --whoUsesMagrinTopMobile: 250px;
 
@@ -58,6 +59,6 @@
   --transition-duration: 0.3s;
 
   @include mobile-media {
-    --menuHeight: clamp(50px, 10.43vw, 80px);
+    --menuHeight: clamp(80px, 13vw, 100px);
   }
 }
